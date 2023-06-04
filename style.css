@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Inter;
+}
+.parent {
+    width: 600px;
+    margin: 40px auto;
+    background-color: #EEE;
+    padding: 20px
+}
+.parent input {
+    border: none;
+    padding: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.parent input:focus {
+    outline: none;
+}
+.parent .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+.parent .buttons span {
+    border: none;
+    background-color: #1d7dea;
+    padding: 6px 10px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+.parent .results {
+    background-color: white;
+    padding: 20px;
+    margin-top: 15px;
+    border: 2px dashed #EEE;
+}
+.parent .results span span {
+    font-weight: bold;
+    color: #1d7dea;
+
+}
