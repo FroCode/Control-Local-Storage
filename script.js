@@ -2,6 +2,10 @@ let allSpans = document.querySelectorAll('span');
 let result = document.querySelector('.results > span');
 
 let theInput = document.getElementById('the-input');
+
+for (let i = 0; i < localStorage.length; i++) {
+    result.textContent += localStorage.getItem(localStorage.key(i)) + '  ';
+}
 allSpans.forEach(span => {
     span.addEventListener('click', (e) => {
         if (e.target.classList.contains('check-item')) {
@@ -32,7 +36,7 @@ function deleteItem() {
     }
 }
 function showItem() {
-    result.textContent = localStorage.getItem(theInput.value)
+    result.textContent = localStorage
 }
 
-console.log(localStorage)
+
